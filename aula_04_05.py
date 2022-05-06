@@ -28,3 +28,9 @@ exercicios = get_links(browser, 'main')
 pprint(exercicios)
 #acessando o array exercicios na posição desejada que é a exercicio 3
 browser.get(exercicios['Exercício 3'])
+
+#pagina inicial e clicando no comece por aqui
+main = browser.find_element_by_tag_name('main')
+clique_aqui = main.find_element_by_tag_name('a')
+pprint(clique_aqui.text)
+clique_aqui.click()
